@@ -32,7 +32,7 @@ void BarPrint(Bar this) {
     if (this->staticBar) {
         printf("\r");
     }
-    printf("%s : \t[", this->text);
+    printf("%s :\t[", this->text);
 
     for (i = 1; i < this->progress; i++) {
         printf("%c", this->barChar);

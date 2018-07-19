@@ -4,16 +4,19 @@
 #include "bar.h"
 
 int main() {
-    printf("Bar\n");
-    char a[] = "jje";
+    char a[] = "Bar";
     Bar b = newBar(a, 10, 0);
     BarSetProgress(b, 5);
+    sleep(1);
     BarPrint(b);
     BarSetProgress(b, 10);
+    sleep(1);
     BarPrint(b);
 
-    printf("Static bar\n");
-    Bar b2 = newBar(a, 10, 1);
+    printf("\n");
+
+    char a2[] = "Static bar";
+    Bar b2 = newBar(a2, 10, 1);
     BarSetProgress(b2, 5);
     sleep(1);
     BarPrint(b2);
